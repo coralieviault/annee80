@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+h1, h2 {
+	text-align: center;
+	color: #91ec42;
+	font-family: "Courier New";
+}
+.fond {
+	background-color: black;
+}
+
+
+a{
+	font-family: "Courier New"
+}
+
+ul#menu_horizontal li { 
+display : inline;
+padding : 0 2em; 
+color: white;
+}
+
+.bordure_verticale {
+height: 200px;
+padding-right: 60px;
+border-right: 1px solid white;
+}
+
+.link {
+	color: white;
+}
+
+.center {display: block; margin: 0 auto;}
+p {
+    border: 3px #91ec42 solid;
+    color: white;
+    text-align: center;
+}
