@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gostbusters</title>
+<link rel="stylesheet" href="css/css.css" />
+<link rel="stylesheet" href="css/bootstrap.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+function typeEffect(element, speed) {
+  var text = $(element).text();
+  $(element).html('');
+  
+  var i = 0;
+  var timer = setInterval(function() {
+          if (i < text.length) {
+            $(element).append(text.charAt(i));
+            i++;
+          } else {
+            clearInterval(timer);
+          }
+        }, speed);
+}
+
+$( document ).ready(function() {
+  var speed = 75;
+  var delay = $('h1').text().length * speed + speed;
+  typeEffect($('h1'), speed);
+  setTimeout(function(){
+    $('h2');
+    typeEffect($('h2'), speed);
+  }, delay);
+});
+  </script> 
+</head>
+
+<body class="fond">
+	<ul id="menu_horizontal">
+<li class="bordure_verticale"><a href="index.html">Accueil</a></li>
+  <li class="bordure_verticale"><a href="retour_vers_futur.html">Retour vers le futur</a></li>
+  <li class="bordure_verticale"><a href="indianajones.html">Indiana Jones</a></li>
+  <li class="bordure_verticale"><a href="starwars.html">Star Wars</a></li>
+  <li class="bordure_verticale"><a href="ET.html">E-T</a></li>
+  <li class="bordure_verticale"><a href="ghostbusters.html">Ghostbusters</a></li>
+  <li class="bordure_verticale"><a href="pere_noel_ordure.html">Le Père Noël est une ordure</a></li>
+	</ul> 
+
+	<h1> Ghostbusters </h1>
+
+	<div class="container">
+	<div class="row">
+    <div class="col-sm">
+      <img src="images/ghostbusters.jpg">
+    </div>
+    <div class="col-sm">
+	<p> Le 12 décembre 1984,  Ivan Reitman sort un film fantastique autour de l’engouement superstitieux des New-yorkais.
+En effet, depuis quelque temps une soudaine recrudescence de phénomènes paranormaux inquiètes les habitants de NY.
+D’après une majorité d’entre eux, certains revenants reviendraient pour semer la pagaille dans les rues de la ville.
+Le réalisateur, fait donc appel à Peter, Raymond et Egon, trois jeunes chercheurs en parapsychologie, pour monter leur propre entreprise : SOS Fantômes.
+Leur but est de traquer sans relâche, dans les moindres recoins de la City ces phénomènes qui interrogent de plus en plus de personnes.
+Les ectoplasmes n’ont qu’à bien se tenir, car les trois jeunes chercheurs comptent bien les capturer, un par un, grâce à des équipements électroniques dernier cri spécialement élaborés à cet effet.
+ </p>
+</div>
+</div>
+</div>
+<br/>
+<h2> Les acteurs principaux </h2>
+	<div class="container-fluid">
+	<div class="row">
+ <div class="col-sm">
+      <img src="images/annie_potts.jpg" class="center">
+      <p> Annie Potts </p>
+  </div>
+       <div class="col-sm">
+      <img src="images/bill_murray.jpg" class="center">
+      <p> Bill Muray </p>
+     </div>
+      <div class="col-sm">
+      <img src="images/dan_aykroyd.jpg" class="center">
+      <p> Dan Aykroyd </p>
+  	</div>
+
+  <div class="container-fluid">
+  <div class="row">
+  	<div class="col-sm">
+      <img src="images/ernie_hudson.jpg" class="center">
+      <p> Ernie Hudson </p>
+  	</div>
+    <div class="col-sm">
+      <img src="images/harold_ramis.jpg" class="center">
+      <p> Harold Ramis </p>
+    </div>
+    <div class="col-sm">
+      <img src="images/sigourney_weaver.jpg" class="center">
+      <p> Sigourney Weaver</p>
+    </div>
+ 
+
+</body>
+
+</html>
