@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Planet cine</title>
+<link rel="stylesheet" href="css/css.css" />
+<link rel="stylesheet" href="css/bootstrap-grid.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+function typeEffect(element, speed) {
+  var text = $(element).text();
+  $(element).html('');
+  
+  var i = 0;
+  var timer = setInterval(function() {
+          if (i < text.length) {
+            $(element).append(text.charAt(i));
+            i++;
+          } else {
+            clearInterval(timer);
+          }
+        }, speed);
+}
+
+$( document ).ready(function() {
+  var speed = 75;
+  var delay = $('h1').text().length * speed + speed;
+  typeEffect($('h1'), speed);
+  setTimeout(function(){
+    $('h2');
+    typeEffect($('h2'), speed);
+  }, delay);
+});
+  </script> 
+</head>
+
+<body class="fond">
+	<ul id="menu_horizontal">
+  <li class="bordure_verticale"><a href="index.html">Accueil</a></li>
+  <li class="bordure_verticale"><a href="retour_vers_futur.html">Retour vers le futur</a></li>
+  <li class="bordure_verticale"><a href="indianajones.html">Indiana Jones</a></li>
+  <li class="bordure_verticale"><a href="starwars.html">Star Wars</a></li>
+  <li class="bordure_verticale"><a href="ET.html">E-T</a></li>
+  <li class="bordure_verticale"><a href="ghostbusters.html">Ghostbusters</a></li>
+  <li class="bordure_verticale"><a href="pere_noel_ordure.html">Le Père Noël est une ordure</a></li>
+	</ul> 
+	<h1>Planet cine</h1>
+
+<div class="container">
+<div class="row">
+  <h2 class="center">Salut à tous et bienvenu sur notre site planet ciné ! </h2>
+  <p> Nous sommes un groupe de 5 étudiants en communication, qui lors d’un projet numérique,  avons décidé de faire une rétrospective des évolutions dans ce domaine.
+Pour cela rien de tel que de naviguer dans une interface utilisée dans les débuts d’internet.
+
+En effet, nous voulons par ce site, et sa mise en forme vintage vous plonger dans les années 80. L’objectif étant de vous remémorer, ou de vous faire connaître les films incontournables à grand succès de cette époque dont vos parents doivent en être les premiers fans. </p>
+</div>
+
+
+</body>
+
+</html>
+
